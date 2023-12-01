@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Bookshelf Symbol';
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(237.2deg, rgba(76, 223, 113, 0.74) 14.31%, rgb(190, 12, 12) 83.58%);
+    height: 100vh;
+    position: relative;
+}
+
+/* header */
+header img {
+    margin: auto;
+    display: block;
+    width: 100%; /* Añadido para ocupar todo el ancho */
+    height: 100%; /* Añadido para ocupar toda la altura */
+    object-fit: cover; /* Añadido para mantener la proporción y cubrir completamente */
+}
+
+main {
+    height: calc(100% - 192px);
+}
+
+main button {
+    font-size: 40px;
+    position: absolute;
+    width: 70px;
+    border: none;
+    top: 40%;
+    cursor: pointer;
+    border-radius: 20px; /* Añadido para hacer los botones redondeados */
+}
+
+main button#si {
+    left: calc(50% - (70px / 2) - 70px);
+}
+
+main button#no {
+    left: calc(50% - (70px / 2) + 70px);
+    transition-property: left, top;
+    transition-duration: 40ms;
+    transition-timing-function: linear;
+}
+
+/* main */
+main img {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - (273px / 2));
+    z-index: -1;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        color: #fff
+    }
+
+    main button {
+        font-size: 20px;
+        width: 50px;
+        position: absolute;
+    }
+    main button#si {
+    left: calc(50% - (70px / 2) - 70px);
+}
+
+main button#no {
+    left: calc(50% - (70px / 2) + 70px);
+    transition-property: left, top;
+    transition-duration: 40ms;
+    transition-timing-function: linear;
+}
+
+    header img {
+        height: 100vh;
+    }
+    body {
+    background: linear-gradient(237.2deg, rgba(76, 223, 113, 0.74) 14.31%, rgb(190, 12, 12) 83.58%);
+    height: 100vh;
+    position: relative;
+    
+}
+main img {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - (273px / 2));
+    z-index: -1;
+}
+}
